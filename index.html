@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beranda - Sejarah Indonesia</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #f4f6f8;
+      color: #2f3640;
+    }
+
+    /* HEADER */
+    header {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    header img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      filter: brightness(0.5);
+    }
+
+    header .overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-shadow: 1px 1px 10px rgba(0,0,0,0.6);
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.1em;
+      margin-top: 8px;
+    }
+
+    /* NAVBAR */
+    nav {
+      background-color: #273c75;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #40739e;
+    }
+
+    /* MAIN CONTENT */
+    main {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      margin: 0;
+      color: #192a56;
+      font-size: 1.2em;
+    }
+
+    .card-content small {
+      color: #718093;
+    }
+
+    .card-content p {
+      font-size: 0.95em;
+      color: #555;
+      margin: 10px 0 15px;
+      line-height: 1.5;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #0097e6;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #273c75;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: #192a56;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      font-size: 0.9em;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      header img {
+        height: 250px;
+      }
+
+      header h1 {
+        font-size: 2.2em;
+      }
+    }
+  </style>
+  <link rel="icon" type="image/x-icon" href="c:\Users\KRISNNA\Downloads\ChatGPT Image Nov 13, 2025, 09_42_20 AM.png">
+</head>
+<body>
+
+  <header>
+    <img src="https://madrasahdigital.co/new/wp-content/uploads/2021/07/pengertian-sejarah.jpg" alt="Header Image">
+    <div class="overlay">
+      <h1>Sejarah In One</h1>
+      <p>Cerita, Biografi, dan Sejarah Tentang NKRI</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="Beranda.html">Beranda</a>
+    <a href="Galeri.html">Galeri</a>
+    <a href="Tentang.html">Tentang</a>
+    <a href="Kontak.html">Kontak</a>
+  </nav>
+
+  <main>
+    <!-- Artikel 1 -->
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Nicolaes_Visscher_Indiae_Orientalis.jpg/1280px-Nicolaes_Visscher_Indiae_Orientalis.jpg" alt="Sejarah Indonesia">
+      <div class="card-content">
+        <small>Sejarah Umum • 30 Oktober 2025</small>
+        <h3>Sejarah Indonesia: Dari Zaman Prasejarah hingga Reformasi</h3>
+        <p>Perjalanan panjang bangsa Indonesia dari masa kerajaan, kolonialisme, hingga kemerdekaan yang membentuk identitas nasional kita...</p>
+        <a href="https://id.wikipedia.org/wiki/Sejarah_Indonesia" class="btn">Baca Selengkapnya</a>
+      </div>
+    </div>
+
+    <!-- Artikel 2 -->
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Majapahit_Empire_id.svg/330px-Majapahit_Empire_id.svg.png" alt="Majapahit">
+      <div class="card-content">
+        <small>Kerajaan • 1 November 2025</small>
+        <h3>Kerajaan Majapahit: Masa Keemasan Nusantara</h3>
+        <p>Majapahit dikenal sebagai kerajaan besar dengan pengaruh kuat di Asia Tenggara. Peninggalannya masih terasa hingga kini...</p>
+        <a href="https://id.wikipedia.org/wiki/Majapahit" class="btn">Baca Selengkapnya</a>
+      </div>
+    </div>
+
+    <!-- Artikel 3 -->
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/IWM-SE-5865-tank-Surabaya-19451127.jpg/330px-IWM-SE-5865-tank-Surabaya-19451127.jpg" alt="Pertempuran Surabaya">
+      <div class="card-content">
+        <small>Perjuangan • 10 November 2025</small>
+        <h3>Kisah Heroik Pertempuran Surabaya</h3>
+        <p>10 November 1945 menjadi simbol keberanian rakyat Indonesia dalam mempertahankan kemerdekaan dari penjajah...</p>
+        <a href="https://id.wikipedia.org/wiki/Pertempuran_Surabaya" class="btn">Baca Selengkapnya</a>
+      </div>
+    </div>
+
+    <!-- Artikel 4 -->
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Indonesia_declaration_of_independence_17_August_1945.jpg/330px-Indonesia_declaration_of_independence_17_August_1945.jpg" alt="Kemerdekaan Indonesia">
+      <div class="card-content">
+        <small>Kemerdekaan • 17 Agustus 1945</small>
+        <h3>Detik-Detik Proklamasi Kemerdekaan Indonesia</h3>
+        <p>Proklamasi kemerdekaan menjadi titik balik sejarah bangsa, menandai lahirnya Indonesia yang merdeka dan berdaulat...</p>
+        <a href="https://id.wikipedia.org/wiki/Proklamasi_Kemerdekaan_Indonesia" class="btn">Baca Selengkapnya</a>
+      </div>
+    </div>
+
+        <!-- Artikel 5 -->
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Stupa_Borobudur.jpg/330px-Stupa_Borobudur.jpg" alt="Borobudur">
+      <div class="card-content">
+        <small>Candi & Budaya • 5 November 2025</small>
+        <h3>Sejarah Candi Borobudur: Keajaiban Dunia dari Nusantara</h3>
+        <p>Borobudur menjadi saksi kejayaan Dinasti Syailendra dan perkembangan agama Buddha di Nusantara...</p>
+        <a href="https://id.wikipedia.org/wiki/Borobudur" class="btn">Baca Selengkapnya</a>
+      </div>
+    </div>
+
+    <!-- Artikel 6 -->
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Hamengku_Buwono_IX_%281973%29.jpg/250px-Hamengku_Buwono_IX_%281973%29.jpg" alt="HB IX">
+      <div class="card-content">
+        <small>Tokoh Nasional • 12 November 2025</small>
+        <h3>Sultan HB IX: Pejuang, Negarawan, dan Bapak Pramuka Indonesia</h3>
+        <p>Nama besar Sultan Hamengkubuwono IX dikenal sebagai tokoh penting dalam perjuangan hingga era modern...</p>
+        <a href="https://id.wikipedia.org/wiki/Hamengkubuwana_IX" class="btn">Baca Selengkapnya</a>
+      </div>
+    </div>
+
+    <!-- Artikel 7 -->
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Collectie_NMvWereldculturen%2C_TM-60036462%2C_Foto%2C_%27De_Kali_Besar_Zuid_in_de_Chinese_wijk_van_Batavia%27%2C_fotograaf_onbekend%2C_1925-1938.jpg/330px-Collectie_NMvWereldculturen%2C_TM-60036462%2C_Foto%2C_%27De_Kali_Besar_Zuid_in_de_Chinese_wijk_van_Batavia%27%2C_fotograaf_onbekend%2C_1925-1938.jpg" alt="Batavia">
+      <div class="card-content">
+        <small>Kota Bersejarah • 20 November 2025</small>
+        <h3>Kota Tua Batavia: Dari VOC hingga Jakarta Modern</h3>
+        <p>Batavia merupakan pusat pemerintahan VOC yang sarat sejarah kolonial, kini menjadi ikon wisata bersejarah...</p>
+        <a href="https://id.wikipedia.org/wiki/Batavia" class="btn">Baca Selengkapnya</a>
+      </div>
+    </div>
+
+    <!-- Artikel 8 -->
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Flag_of_Islamic_State_of_Indonesia.svg/250px-Flag_of_Islamic_State_of_Indonesia.svg.png" alt="DI TII">
+      <div class="card-content">
+        <small>Konflik Nasional • 3 Desember 2025</small>
+        <h3>Pemberontakan DI/TII: Latar Belakang dan Dampaknya</h3>
+        <p>Pemberontakan DI/TII menjadi salah satu konflik besar yang menguji kokohnya negara Indonesia pasca kemerdekaan...</p>
+        <a href="https://id.wikipedia.org/wiki/Darul_Islam" class="btn">Baca Selengkapnya</a>
+      </div>
+    </div>
+
+    <!-- Artikel 9 -->
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Historical_Indonesian_Youth_Pledge%2C_Sumpah_Pemuda_in_1928.jpg/250px-Historical_Indonesian_Youth_Pledge%2C_Sumpah_Pemuda_in_1928.jpg" alt="Sumpah Pemuda">
+      <div class="card-content">
+        <small>Sejarah Perjuangan • 28 Oktober 2025</small>
+        <h3>Sumpah Pemuda 1928: Tonggak Persatuan Bangsa</h3>
+        <p>Sumpah Pemuda menjadi landasan kuat persatuan nasional dan lahirnya identitas bangsa Indonesia...</p>
+        <a href="https://id.wikipedia.org/wiki/Sumpah_Pemuda" class="btn">Baca Selengkapnya</a>
+      </div>
+    </div>
+
+    <!-- Artikel 10 -->
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Srivijaya_Empire.svg/330px-Srivijaya_Empire.svg.png" alt="Sriwijaya">
+      <div class="card-content">
+        <small>Kerajaan • 14 November 2025</small>
+        <h3>Kerajaan Sriwijaya: Pusat Maritim Dunia</h3>
+        <p>Sriwijaya dikenal sebagai kerajaan maritim kuat yang menguasai jalur perdagangan internasional...</p>
+        <a href="https://id.wikipedia.org/wiki/Sriwijaya" class="btn">Baca Selengkapnya</a>
+      </div>
+    </div>
+
+    <!-- Artikel 11 -->
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Presiden_Sukarno.jpg/250px-Presiden_Sukarno.jpg" alt="Soekarno">
+      <div class="card-content">
+        <small>Tokoh Nasional • 1 Desember 2025</small>
+        <h3>Ir. Soekarno: Sang Proklamator dan Arsitek Bangsa</h3>
+        <p>Perjalanan hidup Soekarno penuh dinamika, mulai dari perjuangan, pembuangan, hingga memimpin Indonesia...</p>
+        <a href="https://id.wikipedia.org/wiki/Soekarno" class="btn">Baca Selengkapnya</a>
+      </div>
+    </div>
+
+    <!-- Artikel 12 -->
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Flag_of_Portugal_%281521%29.svg/250px-Flag_of_Portugal_%281521%29.svg.png" alt="Portugis">
+      <div class="card-content">
+        <small>Kolonialisme • 22 Desember 2025</small>
+        <h3>Kedatangan Bangsa Portugis di Nusantara</h3>
+        <p>Kedatangan Portugis menjadi awal kontak besar antara Eropa dan Nusantara dalam perebutan rempah-rempah...</p>
+        <a href="https://id.wikipedia.org/wiki/Imperium_Portugal_di_Nusantara" class="btn">Baca Selengkapnya</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sejarah In One. Dibuat dengan semangat oleh Cankboart.</p>
+  </footer>
+
+</body>
+</html>

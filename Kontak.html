@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak - Inspirasi Harian</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #f5f6fa;
+      color: #2f3640;
+    }
+
+    /* Header */
+    header {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    header img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      filter: brightness(0.5);
+    }
+
+    header .overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin: 10px 0 0;
+    }
+
+    /* Navbar */
+    nav {
+      background-color: #273c75;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 15px 20px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #40739e;
+    }
+
+    /* Main Content */
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 30px;
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .contact-box {
+      flex: 3;
+      background-color: white;
+      border-radius: 10px;
+      padding: 25px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-box h2 {
+      color: #192a56;
+      margin-top: 0;
+    }
+
+    .contact-box form input,
+    .contact-box form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #dcdde1;
+      font-size: 1em;
+    }
+
+    .contact-box form button {
+      background-color: #273c75;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .contact-box form button:hover {
+      background-color: #40739e;
+    }
+
+    /* Sidebar */
+    aside {
+      flex: 1;
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      height: fit-content;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    aside h3 {
+      color: #192a56;
+      margin-top: 0;
+    }
+
+    aside p {
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+
+    aside a {
+      color: #273c75;
+      text-decoration: none;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #192a56;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      main {
+        flex-direction: column;
+      }
+    }
+  </style>
+  <link rel="icon" type="image/x-icon" href="c:\Users\KRISNNA\Downloads\ChatGPT Image Nov 13, 2025, 09_42_20 AM.png">
+</head>
+<body>
+
+  <header>
+    <img src="https://madrasahdigital.co/new/wp-content/uploads/2021/07/pengertian-sejarah.jpg" alt="Header Image">
+    <div class="overlay">
+      <h1>Kontak Kami</h1>
+      <p>Hubungi kami untuk pertanyaan atau kerja sama</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="Galeri.html">Galeri</a>
+    <a href="Tentang.html">Tentang</a>
+    <a href="Kontak.html">Kontak</a>
+  </nav>
+
+  <main>
+    <div class="contact-box">
+      <h2>Kirim Pesan</h2>
+      <form>
+        <input type="text" placeholder="Nama Lengkap" required>
+        <input type="email" placeholder="Email" required>
+        <textarea rows="6" placeholder="Tulis pesan kamu..." required></textarea>
+        <button type="submit">Kirim</button>
+      </form>
+    </div>
+
+    <aside>
+      <h3>Informasi Kontak</h3>
+      <p><b>Whatsapp / Telepon:</b><br>
+        081237655741 (Banyu)<br>
+        081238131123 (Krishna)<br>
+        081314823661 (Cantaka)</p>
+
+      <p><b>Email:</b><br>
+        <a href="putukrishna10@gmail.com">putukrishna10@gmail.com</a></p>
+
+      <p><b>Alamat:</b><br>
+        Jimbaran, Bali – Indonesia</p>
+    </aside>  
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sejarah In One. Dibuat dengan semangat oleh Cankboart.</p>
+  </footer>
+
+</body>
+</html>
